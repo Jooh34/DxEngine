@@ -2,6 +2,10 @@
 #ifndef _GRAPHICSCLASS_H_
 #define _GRAPHICSCLASS_H_
 
+#include "cameraclass.h"
+#include "modelclass.h"
+#include "colorshaderclass.h"
+
 // GLOBALS //
 const bool FULL_SCREEN = false;
 const bool VSYNC_ENABLED = true;
@@ -28,6 +32,10 @@ private:
 
 private:
 	D3DClass* m_D3D;
+	CameraClass* m_Camera;
+	ModelClass* m_Model;
+	ColorShaderClass* m_ColorShader;
+
 };
 
 #endif // _GRAPHICSCLASS_H_

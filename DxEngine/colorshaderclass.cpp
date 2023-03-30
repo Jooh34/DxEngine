@@ -26,7 +26,7 @@ bool ColorShaderClass::Initialize(ID3D11Device * device, HWND hwnd)
 
 
 	// Initialize the vertex and pixel shaders.
-	result = InitializeShader(device, hwnd, L"../DxEngine/color.vs", L"../DxEngine/color.ps");
+	result = InitializeShader(device, hwnd, L"../DxEngine/colorVS.hlsl", L"../DxEngine/colorPS.hlsl");
 	if (!result)
 	{
 		return false;

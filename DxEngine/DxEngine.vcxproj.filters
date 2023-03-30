@@ -76,10 +76,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="color.vs">
+    <None Include="colorVS.hlsl">
       <Filter>셰이더 파일</Filter>
     </None>
-    <None Include="color.ps">
+    <None Include="colorPS.hlsl">
       <Filter>셰이더 파일</Filter>
     </None>
   </ItemGroup>

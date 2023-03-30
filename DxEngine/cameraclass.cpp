@@ -72,18 +72,18 @@ void CameraClass::Render()
 	roll = m_rotationZ * 0.0174532925f;
 
 	// Create the rotation matrix from the yaw, pitch, and roll values.
-	rotationMatrix = DirectX::XMMatrixRotationRollPitchYaw(roll, pitch, yaw);
+	rotationMatrix = XMMatrixRotationRollPitchYaw(roll, pitch, yaw);
 
 	// Transform the lookAt and up vector by the rotation matrix so the view is correctly rotated at the origin.
 	// https://m.blog.naver.com/fs0608/221650925743 (About SIMD, Single Instruction, Multiple Data)
 	lookAt = XMVector3TransformCoord(lookAt, rotationMatrix);
-	up = DirectX::XMVector3TransformCoord(up, rotationMatrix);
+	up = XMVector3TransformCoord(up, rotationMatrix);
 
 	// Translate the rotated camera position to the location of the viewer.
 	lookAt = position + lookAt;
 
 	// Finally create the view matrix from the three updated vectors.
-	m_viewMatrix = DirectX::XMMatrixLookAtLH(position, lookAt, up);
+	m_viewMatrix = XMMatrixLookAtLH(position, lookAt, up);
 
 	return;
 }

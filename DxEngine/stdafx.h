@@ -10,5 +10,4 @@
 #include <memory.h>
 #include <tchar.h>
 
-
 #include "DxDefine.h"

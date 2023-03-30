@@ -280,9 +280,9 @@ bool ColorShaderClass::SetShaderParameters(ID3D11DeviceContext * deviceContext, 
 	//Make sure to transpose matrices before sending them into the shader, this is a requirement for DirectX 11.
 
 	// Transpose the matrices to prepare them for the shader.
-	worldMatrix = DirectX::XMMatrixTranspose(worldMatrix);
-	viewMatrix = DirectX::XMMatrixTranspose(viewMatrix);
-	projectionMatrix = DirectX::XMMatrixTranspose(projectionMatrix);
+	worldMatrix = XMMatrixTranspose(worldMatrix);
+	viewMatrix = XMMatrixTranspose(viewMatrix);
+	projectionMatrix = XMMatrixTranspose(projectionMatrix);
 	//Lock the m_matrixBuffer, set the new matrices inside it, and then unlock it.
 
 	// Lock the constant buffer so it can be written to.

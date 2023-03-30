@@ -2,7 +2,7 @@
 #define _COLORSHADERCLASS_H_
 
 
-#include "DxDefine.h"
+#include "stdafx.h"
 using namespace std;
 
 

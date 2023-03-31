@@ -1,5 +1,4 @@
 #include "colorshaderclass.h"
-#include <fstream>
 //As usual the class constructor initializes all the private pointers in the class to null.
 
 ColorShaderClass::ColorShaderClass()

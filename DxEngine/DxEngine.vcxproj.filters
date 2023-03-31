@@ -45,6 +45,12 @@
     <ClCompile Include="cameraclass.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="textureclass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="textureshaderclass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D3dclass.h">
@@ -74,6 +80,12 @@
     <ClInclude Include="cameraclass.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="textureclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="textureshaderclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="colorVS.hlsl">
@@ -82,5 +94,13 @@
     <None Include="colorPS.hlsl">
       <Filter>셰이더 파일</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="texturePS.hlsl">
+      <Filter>셰이더 파일</Filter>
+    </FxCompile>
+    <FxCompile Include="textureVS.hlsl">
+      <Filter>셰이더 파일</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>

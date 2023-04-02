@@ -10,5 +10,7 @@
 #include <memory.h>
 #include <tchar.h>
 #include <fstream>
+#include <cmath>
+const double PI = acos(-1);
 
 #include "DxDefine.h"
